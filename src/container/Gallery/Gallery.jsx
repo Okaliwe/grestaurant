@@ -23,7 +23,7 @@ const Gallery = () => {
         <SubHeading title='instagram'/>
         <h1 className='headtext'>Photo Gallery</h1>
         <p className='p__opensans'style={{color:'#AAA',marginTop:'2rem'}}>Traditionally the most expensive dining experience.Typically multi-course,elegant a la carte or prix fixe menu options</p>
-        <button type='button'className='button'>view more hy</button>
+        <button type='button'className='button'>view more</button>
       </div>
       <div className='gallery-images'>
         <div className='gallery-images-container'ref={scrollRef}>
