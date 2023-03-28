@@ -1,0 +1,65 @@
+.Aboutus{
+    position: relative;
+}
+.Aboutus-overlay{
+    position: absolute;
+    inset:0;
+}
+.Aboutus-overlay img{
+    width: 391px;
+    height: 415px;
+    z-index: 0;
+}
+.aboutus-content{
+    width: 100%;
+    z-index: 2;
+}
+.left-content{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.knife-img{
+    margin: 2rem 4rem;
+}
+.knife-img img{
+    height: 910px;
+}
+.right-content{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+}
+.left-content p,.right-content p{
+    margin: 2rem 0;
+    color: var(--color-grey);
+}
+@media screen and (max-width:2000px) {
+    .knife-img img{
+        height:1110px;
+    }
+    .left-content p,.right-content p{
+        margin: 4rem 0;
+        color: var(--color-grey);
+    }
+}
+@media screen and (max-width:900px) {
+    .aboutus-content{
+        flex-direction: column;
+    }
+    .knife-img{
+        margin: 4rem 0;
+    }
+}
+@media screen and (max-width:650px) {
+    .Aboutus-overlay img{
+     width: 80%;
+     height: 320px;
+    }
+}
