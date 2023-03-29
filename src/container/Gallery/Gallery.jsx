@@ -28,15 +28,15 @@ const Gallery = () => {
       <div className='gallery-images'>
         <div className='gallery-images-container'ref={scrollRef}>
           {photoimages.map((image,idx)=>(
-            <div className='gallary-images-card flex'key={`gallery_image-${idx+1}`}>
+            <div className='gallery-images-card flex'key={`gallery_image-${idx+1}`}>
               <img src={image} alt='gallery'/>
               <BsInstagram className='gallery-icons'/>
             </div>
           ))}
         </div>
         <div className='gallery-arrows'>
-          <BsArrowLeftShort className='gallery-icons'onClick={()=>scroll('left')}/>
-          <BsArrowRightShort className='gallery-icons'onClick={()=>scroll('right')}/>
+          <BsArrowLeftShort className='gallery-arrow'onClick={()=>scroll('left')}/>
+          <BsArrowRightShort className='gallery-arrow'onClick={()=>scroll('right')}/>
         </div>
       </div>
     </div>

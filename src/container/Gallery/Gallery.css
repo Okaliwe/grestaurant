@@ -4,3 +4,112 @@
     background: var(--color-black);
     padding:4rem 0 4rem 6rem;
 }
+.gallery-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 500px;
+    padding-right: 2rem;
+}
+.gallery-content button{
+    margin: 1rem;
+}
+.gallery-images{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+    position: relative;
+}
+.gallery-images-container{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    overflow-x: scroll;
+}
+.gallery-images-container::-webkit-scrollbar{
+    display: none;
+}
+.gallery-images-card{
+    position: relative;
+    min-width: 301px;
+    height: 446px;
+    margin-right: 2rem;
+}
+.gallery-icons{
+position: absolute;
+color: white;
+font-size: 2rem;
+opacity: 0.5;
+transition: .5s ease;
+cursor: pointer;
+}
+.gallery-images-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.gallery-images-card img:hover{
+    opacity: 0.35;
+}
+.gallery-images-card img:hover .gallery-icons{
+    opacity: 1;
+}
+.gallery-arrows{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: absolute;
+    bottom: 5%;
+}
+.gallery-arrow{
+color: var(--color-golden);
+cursor: pointer;
+font-size: 2rem;
+background-color: var(--color-black);
+border-radius: 5px;
+}
+.gallery-arrow:hover{
+    color: white;
+}
+@media screen and (min-width:2000px){
+    .gallery-content{
+        min-width: 1000px;
+        padding-right: 4rem;
+    }
+    .gallery-images-card{
+        min-width: 400px;
+        height: 500px;
+    }
+}
+@media screen and (max-width:1150px){
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery-images{
+        max-width: 100%;
+        margin: 5rem 0;
+    }
+}
+@media screen and (max-width:850px){
+    .gallery{
+        padding: 4rem 0 4rem 4rem;
+    }
+}
+@media screen and (max-width:650px){
+    .gallery{
+        padding: 4rem 0 4rem 4rem;
+    }
+    .gallery-content{
+        min-width: 100%;
+    }
+    .gallery-images-card{
+        min-width: 240px;
+        height: 320px;
+    }
+}
