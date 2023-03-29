@@ -6,7 +6,7 @@ import { SubHeading } from '../../components';
 const Chef = () => (
   <div className='background wrapper padding'>
     <div className='chef-img wrapper-img wrapper_img-reverse'>
-      <img src={images.chef} alt='chef-image'/>
+      <img src={images.chef1} alt='chef-image'/>
     </div>
     <div className='chef-content wrapper-info'>
       <SubHeading title="chef's Word"/>
